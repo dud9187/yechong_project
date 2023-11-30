@@ -1,0 +1,73 @@
+footer {
+    article {
+        width: 1280px;
+        margin: 0 auto;
+        font-size: 16px;
+        padding-bottom: 75px;
+        .footer_top{
+            @include flexLayout (row,space-between,center);
+            padding: 20px 0;
+            border-bottom: 1px solid #e0e0e0 ;
+            ul{
+                @include flexLayout (row,flex-start,center);
+                &.terms{
+                    li{
+                        position: relative;
+                        padding: 0 15px;
+                        &:first-child{
+                            padding-left: 0;
+                        }
+                        &:last-child{
+                            padding-right: 0;
+                            &::before{
+                                display: none;
+                            }
+                        }
+                        &::before{
+                            position: absolute;
+                            content: '';
+                            width: 1px;
+                            height: 10px;
+                            background-color: #e0e0e0;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            right: 0;
+                        }
+                    }
+                }
+                &.sns{
+                    justify-content: flex-end;
+                    gap: 15px;
+                }
+            }
+        }
+        .footer_btm{
+            @include flexLayout(row, space-between, flex-end);
+            padding-top: 40px;
+            .infor{
+                color: #767676;
+                address{
+                    margin: 30px 0 25px;
+                    span{
+                        display: block;
+                    }
+                    ul{
+                        @include flexLayout(row,flex-start,center);
+                        margin-top: 15px;
+                        gap: 20px;
+                        li{
+                            i{
+                                color: #101010;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+            }
+            .logo_area{
+                @include flexLayout(row,flex-end,center);
+                gap: 20px;
+            }
+        }
+    }
+}
