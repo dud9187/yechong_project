@@ -126,22 +126,22 @@
                     li{
                         &:first-child {
                             i{
-                                mask-image: url('/images/sec02_icon1.png');
+                                mask-image: url('../images/sec02_icon1.png');
                             }
                         }
                         &:nth-child(2) {
                             i{
-                                mask-image: url('/images/sec02_icon2.png');
+                                mask-image: url('../images/sec02_icon2.png');
                             }
                         }
                         &:nth-child(3) {
                             i{
-                                mask-image: url('/images/sec02_icon3.png');
+                                mask-image: url('../images/sec02_icon3.png');
                             }
                         }
                         &:last-child {
                             i{
-                                mask-image: url('/images/sec02_icon4.png');
+                                mask-image: url('../images/sec02_icon4.png');
                             }
                         }
                         a{
