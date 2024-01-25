@@ -1,0 +1,50 @@
+header {
+    article{
+        padding: 25px 60px;
+        @include flexLayout(row, space-between, center);
+        h1{
+            a{
+                display: block;
+                margin-right: 40px
+            }
+        }
+        nav{
+            ul{
+                @include flexLayout(row,space-between,center);
+                li{
+                    a{
+                        padding: 0 30px;
+                        font-size: 20px;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+        .login{
+            display: block;
+            @include flexLayout(row, space-between, center);
+            width: 134px;
+            height: 60px;
+            border-radius: 50px;
+            color: #fff;
+            padding: 0 29px;
+            background: #101010;
+            transition: all .4s;
+            i{
+                width: 18px;
+                height: 16px;
+                background: #fff;
+                mask-size: 18px 16px;
+                mask-image: url('../images/login.png');
+            }
+            &:hover{
+                background: #fff;
+                color: #101010;
+                border: 1px solid #101010;
+                i{
+                    background-color: #101010;
+                }
+            }
+        }
+    }
+}
