@@ -357,8 +357,8 @@ header article .login i {
   background: #fff;
   -webkit-mask-size: 18px 16px;
           mask-size: 18px 16px;
-  -webkit-mask-image: url("/images/login.png");
-          mask-image: url("/images/login.png");
+  -webkit-mask-image: url("../images/login.png");
+          mask-image: url("../images/login.png");
 }
 header article .login:hover {
   background: #fff;
@@ -676,20 +676,20 @@ footer article .footer_btm .logo_area {
           align-items: center;
 }
 .main section.quick_menu article ul li:first-child i {
-  -webkit-mask-image: url("/images/sec02_icon1.png");
-          mask-image: url("/images/sec02_icon1.png");
+  -webkit-mask-image: url("../images/sec02_icon1.png");
+          mask-image: url("../images/sec02_icon1.png");
 }
 .main section.quick_menu article ul li:nth-child(2) i {
-  -webkit-mask-image: url("/images/sec02_icon2.png");
-          mask-image: url("/images/sec02_icon2.png");
+  -webkit-mask-image: url("../images/sec02_icon2.png");
+          mask-image: url("../images/sec02_icon2.png");
 }
 .main section.quick_menu article ul li:nth-child(3) i {
-  -webkit-mask-image: url("/images/sec02_icon3.png");
-          mask-image: url("/images/sec02_icon3.png");
+  -webkit-mask-image: url("../images/sec02_icon3.png");
+          mask-image: url("../images/sec02_icon3.png");
 }
 .main section.quick_menu article ul li:last-child i {
-  -webkit-mask-image: url("/images/sec02_icon4.png");
-          mask-image: url("/images/sec02_icon4.png");
+  -webkit-mask-image: url("../images/sec02_icon4.png");
+          mask-image: url("../images/sec02_icon4.png");
 }
 .main section.quick_menu article ul li a {
   display: -webkit-box;
