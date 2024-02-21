@@ -1,4 +1,5 @@
 .main {
+    width: 100%;
     section{
         width: 100%;
         margin-bottom: 100px;
@@ -315,10 +316,7 @@
             padding: 100px 0;
             article{
                 position: relative;
-                padding: 0 310px;
-                width: auto;
                 .news_slide{
-                    width: 1280px;
                     .swiper{
                         &-slide{
                             background: #fff;
@@ -370,6 +368,7 @@
                                 }
                                 &.img_cnt{
                                     img{
+                                        width: 100%;
                                         margin-bottom: 22px;
                                     }
                                 }
@@ -383,10 +382,10 @@
                     transform: translateY(-50%);
                     z-index: 999;
                     &.news_prev {
-                        left: 12%;
+                        left: -12%;
                     }
                     &.news_next {
-                        right: 12%;
+                        right: -12%;
                     }
                 }
                 .news_pagination{
@@ -490,10 +489,9 @@
                 ul{
                     @include flexLayout(row,space-between,center);
                     flex-wrap: wrap;
-                    row-gap: 40px;
                     li{
                         a{
-                            width: 245px;
+                            width: 248px;
                             display: block;
                             text-align: center;
                         }
@@ -503,9 +501,12 @@
                     ul{
                         li{
                             a{
+                                width: 255px;
+                                padding: 20px 0;
                                 &:hover{
+                                    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
                                     img{
-                                        transform: scale(1.1);
+                                        transform: scale(1.03);
                                     }
                                 }
                                 img{
@@ -517,19 +518,22 @@
                 }
                 &.associa{
                     ul{
-                         gap: 70px 13.5px;
+                        gap:10px;
                          justify-content: flex-start;
                         li{
                             a{
+                                padding: 20px 3px;
                                 &:hover{
+                                    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
                                     span{
                                         background-size: 100%;
+                                        color: $theme-main-color;
                                     }
                                 }
                                 span{
                                     font-weight: 700;
                                     font-size: 28px;
-                                    background-image: linear-gradient(transparent calc(100% - 2px), #101010 1px);
+                                    background-image: linear-gradient(transparent calc(100% - 2px), $theme-main-color 1px);
                                     background-position: left bottom;
                                     background-size: 0;
                                     background-repeat: no-repeat;

@@ -9,11 +9,13 @@ header {
             }
         }
         nav{
+            width: 100%;
+            padding:0 20px;
             ul{
-                @include flexLayout(row,space-between,center);
+                display: flex;
+                justify-content: space-between;
                 li{
                     a{
-                        padding: 0 30px;
                         font-size: 20px;
                         font-weight: 700;
                     }
@@ -22,20 +24,20 @@ header {
         }
         .login{
             display: block;
-            @include flexLayout(row, space-between, center);
+            @include flexLayout(row, center, center);
             width: 134px;
             height: 60px;
             border-radius: 50px;
             color: #fff;
-            padding: 0 29px;
             background: #101010;
             transition: all .4s;
             i{
+                margin-right: 10px;
                 width: 18px;
                 height: 16px;
                 background: #fff;
                 mask-size: 18px 16px;
-                mask-image: url('/images/login.png');
+                mask-image: url('../images/login.png');
             }
             &:hover{
                 background: #fff;
