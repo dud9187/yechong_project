@@ -307,23 +307,19 @@ header article h1 a {
   display: block;
   margin-right: 40px;
 }
+header article nav {
+  width: 100%;
+  padding: 0 20px;
+}
 header article nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 header article nav ul li a {
-  padding: 0 30px;
   font-size: 20px;
   font-weight: 700;
 }
@@ -336,9 +332,9 @@ header article .login {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -346,12 +342,12 @@ header article .login {
   height: 60px;
   border-radius: 50px;
   color: #fff;
-  padding: 0 29px;
   background: #101010;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
 header article .login i {
+  margin-right: 10px;
   width: 18px;
   height: 16px;
   background: #fff;
@@ -621,7 +617,7 @@ footer article .footer_btm .logo_area {
   position: absolute;
   top: 745px;
   z-index: 99;
-  left: 56%;
+  left: 58%;
 }
 .main section.main_swiper .control .playpause button {
   background: none;
